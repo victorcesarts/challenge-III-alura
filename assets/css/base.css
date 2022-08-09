@@ -1,0 +1,10 @@
+html{
+ background-color: #2D2D2D;
+}
+
+:root{
+  --verde: #01D5A1;
+  --cinza-escuro: #2D2D2D;
+  --branco: #fff;
+  --preto: #000;
+}

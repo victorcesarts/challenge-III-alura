@@ -1,0 +1,81 @@
+.cabecalho{
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  box-shadow: 0 0px 8px 2px var(--preto);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0 2rem 0;
+}
+
+.cabecalho__titulo{
+  /* width: 100vw; */
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 700;
+  font-size: 2.7rem;
+  line-height: 50px;
+  color: var(--verde);
+  text-align: center;
+  padding: .5rem;
+}
+
+.cabecalho__titulo-nome{
+  width: auto;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.3rem;
+  line-height: 40px;
+  color: var(--branco);
+  text-align: center;
+  /* padding-bottom: 8px; */
+}
+
+.cabecalho__perfil-img{
+  height: 150px;
+  border-radius: 60%;
+  border: 2px outset var(--verde);
+  padding: 20px;
+}
+
+.cabecalho__img{
+  width: 100vw;
+  height: 70vh;
+}
+
+.navegacao{
+  display:
+  flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100vw;
+}
+.navegacao__lista{
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.navegacao__lista__link{
+  width: 100%;
+  text-align: center;
+  border: 2px solid var(--preto);
+  border-radius: 16px;
+  padding: 5px;
+  background-color: var(--cinza-escuro);
+  margin-bottom: 20px;
+  box-shadow: inset 2px 3px 8px 1px var(--verde);
+}
+
+.navegacao__lista__link a{
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: var(--verde);
+  line-height: 2rem;
+}
