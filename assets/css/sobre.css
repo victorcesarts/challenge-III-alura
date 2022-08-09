@@ -4,7 +4,7 @@
   justify-content: center;
   width: 100vw;
   height: 94vh;
-  margin: 2rem 0  2rem 0;
+  margin: 2rem 0  0 0;
 }
 
 .sobre__conteudo{
@@ -26,8 +26,9 @@
   font-size: 2rem;
   line-height: 3rem;
   color: var(--verde);
-  text-align: left;
-  padding: .8rem;
+  text-align: justify;
+  padding: 1rem;
+  width: 92%;
 }
 
 .sobre__texto{
