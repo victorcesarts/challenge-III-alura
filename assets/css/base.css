@@ -4,7 +4,9 @@ html{
 
 :root{
   --verde: #01D5A1;
-  --cinza-escuro: #2D2D2D;
+  --cinza: #2D2D2D;
+  --cinza-escuro: #111111;
   --branco: #fff;
+  --branco-suave: #F2F5F7;
   --preto: #000;
 }

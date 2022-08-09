@@ -9,13 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:
     wght@300;400;700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="assets/css/reset.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/base.css" rel="stylesheet">
+  <link href="assets/css/cabecalho.css" rel="stylesheet">
+  <link href="assets/css/sobre.css" rel="stylesheet">
+  <link href="assets/css/skill.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="cabecalho">
-    <img class = "cabecalho__perfil-img"  src="assets/img/victor.png" alt="Foto de Víctor">
+    <div class = "cabecalho__perfil">
+      <img class = "cabecalho__perfil-img"  src="assets/img/victor.png" alt="Foto de Víctor">
+    </div>
     <div class = "cabecalho__texto">
       <h1 class = "cabecalho__titulo">Olá!</h1>
       <p class = "cabecalho__titulo-nome">Eu sou o Víctor</p>
@@ -33,13 +37,17 @@
       </ul>
     </nav>
 </header>
+
   <main class="conteudo">
-    <section class="sobre-mim-container">
-      <h1 class="titulo__sobre-mim">Sobre mim</h1>
-      <p class = "texto__sobre-mim">Olá! Sou o Víctor e sou apaixonado por tecnologia e computação! Atualmente estudo Engenharia de Controle e 
-        Automação na Universidade Federal de Minas Gerais. Já tive contatos com linguagens como C, C++, Python, Javascript e até VHDL. 
-        Atualmente participo do programa One patrocinado pela Oracle e Alura, além disso, sou monitor das matérias de introdução à programação na universidade que estudo.
-      </p>
+
+    <section class="sobre">
+      <div class="sobre__conteudo">
+        <h1 class="sobre__titulo">Sobre mim</h1>
+        <p class = "sobre__texto">Olá! Sou o Víctor e sou apaixonado por tecnologia e computação! Atualmente estudo Engenharia de Controle e 
+          Automação na Universidade Federal de Minas Gerais (UFMG), participo do programa One patrocinado pela Oracle e Alura e sou monitor das matérias de introdução à programação na UFMG. 
+        </p>
+        <img src = "assets/img/cpu2.jpg" class ="sobre__img" alt = "Imagem de uma CPU">
+      </div>
     </section>
 
     <section class="skills">
