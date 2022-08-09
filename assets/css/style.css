@@ -1,14 +1,22 @@
 .cabecalho{
   background-image: url(../img/background.jpg);
   background-size: cover;
-  box-shadow: 0 0px 8px 2px var(--preto);
-  height: 90vh;
+  box-shadow: 0 0px 15px 2px var(--preto);
+  height: 94vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 0 2rem 0;
+  /* justify-content: center; */
+  padding: 1.5rem 0 0 0;
 }
 
+.cabecalho__texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 .cabecalho__titulo{
   /* width: 100vw; */
   font-family: 'Merriweather', sans-serif;
@@ -21,15 +29,12 @@
 }
 
 .cabecalho__titulo-nome{
-  width: auto;
   font-family: 'Merriweather', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 2.3rem;
-  line-height: 40px;
+  line-height: 2.5rem;
   color: var(--branco);
-  text-align: center;
-  /* padding-bottom: 8px; */
 }
 
 .cabecalho__perfil-img{
@@ -47,7 +52,7 @@
 .navegacao{
   display:
   flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   height: 100%;
   width: 100vw;
