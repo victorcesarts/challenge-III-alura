@@ -1,0 +1,86 @@
+.formacoes{
+  padding: 1rem 1rem 2rem 1rem;
+  height: 94vh;
+}
+
+.formacoes__container{
+  display: grid;
+  grid-template-areas:
+    "card-ufmg"
+    "card-ifmg"
+    "card-alura";
+  grid-template-columns: 100%;
+  grid-template-rows: 33% 33% 33%;
+  gap: .2rem;
+  align-items: center;
+  height: calc(94vh - 2rem);
+}
+
+.formacoes__card{
+  background: var(--cinza-escuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.card__ufmg{
+  grid-area: card-ufmg;
+  grid-column: 1;
+  grid-row: 1 / 1;
+}
+
+.card__ifmg{
+  grid-area: card-ifmg;
+  grid-column: 1;
+  grid-row: 2 / 2
+}
+
+.card__alura{
+  grid-area: card__alura;
+  grid-column: 1;
+  grid-row: 3 / 3
+}
+
+.card__ifmg img{
+  height: 50%;
+  width: 98%;
+}
+
+.formacoes__card__border{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 60%;
+  background-color: var(--preto);
+  border: 1px outset var(--verde);
+  padding: .25rem;
+}
+
+.formacoes__card__img{
+  height: 95%;
+  width: 90%;
+}
+
+.formacoes__titulo{
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: var(--verde);
+  text-align: left;
+  padding: .2rem;
+}
+
+.formacoes__card__titulo{
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--branco-suave);
+  text-align: center;
+  width: 75%;
+  padding: .2rem;
+}
