@@ -23,6 +23,8 @@
   <link href="assets/css/skill.css" rel="stylesheet">
   <link href="assets/css/formacoes.css" rel="stylesheet">
   <link href="assets/css/projetos.css" rel="stylesheet">
+  <link href="assets/css/contato.css" rel="stylesheet">
+  <link href="assets/css/rodape.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +55,7 @@
     <section class="sobre">
       <div class="sobre__conteudo">
         <h1 class="sobre__titulo">Sobre mim</h1>
-        <p class = "sobre__texto">Olá! Sou o Víctor e sou apaixonado por tecnologia e computação! Atualmente estudo Engenharia de Controle e 
+        <p class = "sobre__texto">Olá! Sou o Víctor, brasileiro, tenho 21 anos e sou apaixonado por tecnologia e computação! Atualmente estudo Engenharia de Controle e 
           Automação na Universidade Federal de Minas Gerais (UFMG), participo do programa One patrocinado pela Oracle e Alura e sou monitor das matérias de introdução à programação na UFMG. 
         </p>
         <div class ="sobre__img"></div>
@@ -134,8 +136,8 @@
             </div>
           </div>
           <div class = "projetos__card__botao">
-            <button class = "projetos__card__botao--pages">Pages</button>
-            <button class = "projetos__card__botao--repositorio">Repositório</button>
+            <button onclick = "location.href = 'https://victorcesarts.github.io/challenge-II-alura/'" class = "projetos__card__botao--pages">Pages</button>
+            <button onclick = "location.href = 'https://github.com/victorcesarts/challenge-II-alura'" class = "projetos__card__botao--repositorio">Repositório</button>
           </div>
         </div>
 
@@ -148,8 +150,8 @@
             </div>
           </div>
           <div class = "projetos__card__botao">
-            <button class = "projetos__card__botao--pages">Pages</button>
-            <button class = "projetos__card__botao--repositorio">Repositório</button>
+            <button onclick = "location.href = 'https://victorcesarts.github.io/challenge-I-alura/'" class = "projetos__card__botao--pages">Pages</button>
+            <button onclick = "location.href = 'https://github.com/victorcesarts/challenge-I-alura'" type="button" class = "projetos__card__botao--repositorio">Repositório</button>
           </div>
         </div>
   
@@ -162,11 +164,41 @@
             </div>
           </div>
           <div class = "projetos__card__botao">
-            <button class = "projetos__card__botao--pages">Pages</button>
-            <button class = "projetos__card__botao--repositorio">Repositório</button>
+            <button onclick = "location.href = 'https://github.com/victorcesarts/Final_Project_MIPS_Architecture'" type="button" class = "projetos__card__botao--repositorio--mips">Repositório</button>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="contato">
+      <h1 class = "contato__titulo">Entre em contato</h1>
+      <form action="#" class="contato__formulario">
+        <label class = "contato__form__label" for = "nome">Nome</label>
+        <input class="contato__form__input contato__form__input--nome" id="nome" required>
+
+        <label class = "contato__form__label" for = "email">E-mail</label>
+        <input class="contato__form__input contato__form__input--email" id="email" required>
+
+        <label class = "contato__form__label" for = "assunto">Assunto</label>
+        <input class="contato__form__input contato__form__input--assunto" id="assunto">
+
+        <label class = "contato__form__label" for = "mensagem">Mensagem</label>
+        <textarea class="contato__form__input contato__form__input--mensagem" cols="70" rows="10" id="mensagem" required></textarea>
+
+        <input class="contato__form__input__enviar" type="submit" value="Enviar mensagem">
+      </form>
+      <div class = "contato__redes">
+        <a href = "https://github.com/victorcesarts">
+          <img src = "assets/img/github.svg" class = "contato__github">
+        </a>
+        <a href = "https://linkedin.com/in/victor-cesar-engineering">
+          <img src = "assets/img/linkedin.svg" class = "contato__linkedin">
+        </a>
+      </div>
+    </section>
   </main>
+ <footer  class="rodape">
+    <h1 class="rodape__titulo">Desenvolvido por Víctor César </h1>
+    <p class="rodape__descritivo">Todos os direitos reservados - 2022</p>
+  </footer>
 </body>
