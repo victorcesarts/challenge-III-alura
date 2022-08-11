@@ -1,11 +1,149 @@
 .projetos{
-  padding: 1rem 1rem 2rem 1rem;
-  height: 94vh;
+  padding: 0 16px 0 16px;
+  height: calc(150vh + 3rem);
+  margin-bottom: 25px;
+}
+
+.projetos__titulo{
+  color: var(--verde);
+  font-family: 'Merriweather', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  text-align: left;
 }
 
 .projetos__container{
   display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "forca"
+    "decodificador"
+    "MIPS";
   grid-template-columns: 100%;
   grid-template-rows: 33.33% 33.33% 33.33%;
+  height: calc(150vh - 0px);
+}
 
+.projetos__card{
+  display: grid;
+  grid-template-areas:
+    "card-imagem"
+    "card-texto"
+    "card-botao";
+  grid-template-columns: 100%;
+  grid-template-rows: 60% 25% 15%;
+}
+
+.projetos__card__imagem{
+  grid-area: card-imagem;
+  grid-row: 1 / 1;
+  height: 100%;
+  width: 100%;
+}
+
+.projetos__card__corpo{
+  background-color: var(--cinza-escuro);
+  grid-area: card-texto;
+  grid-row: 2 / 2;
+  height: 100%;
+}
+
+.projetos__card__botao{
+  align-items: center;
+  display: grid;
+  grid-area: card-botao;
+  grid-row: 3 / 3;
+  grid-template-areas:
+    "botao-pages"
+    "botao-repositorio";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  width: 100%;
+  justify-items: center;
+}
+
+.projetos__card__cabecalho{
+  display: grid;
+  grid-template-areas:
+    "titulo"
+    "descritivo";
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 60%;
+  height: 100%;
+  padding: 0 5px 0 5px;
+}
+
+.projetos__card__titulo{
+  color: var(--verde);
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.projetos__card__descritivo{
+  color: var(--branco-suave);
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.projetos__card__imagem--forca{
+  background: url(../img/forca.jpg) center no-repeat;
+  background-size: 100% 100%;
+  grid-area: forca;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.projetos__card__imagem--decodificador{
+  background: url(../img/decodificador.jpg) center no-repeat;
+  background-size: 100% 100%;
+  grid-area: decodificador;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.projetos__card__imagem--MIPS{
+  background: url(../img/mips.jpg) center no-repeat;
+  background-size: 100% 100%;
+  grid-area: MIPS;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.projetos__card__botao--pages{
+  background-color: var(--cinza-escuro);
+  border: 2px solid var(--verde);
+  border-radius: 8px;
+  color: var(--verde);
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  grid-area: botao-pages;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  height: 80%;
+  line-height: 1.8rem;
+  text-align: center;
+  width: 150px;
+}
+
+.projetos__card__botao--repositorio{
+  background-color: var(--verde);
+  border: 2px solid var(--preto);
+  border-radius: 8px;
+  color: var(--preto);
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  grid-area: botao-repositorio;
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  height: 75%;
+  line-height: 1.8rem;
+  text-align: center;
+  width: 150px;
 }

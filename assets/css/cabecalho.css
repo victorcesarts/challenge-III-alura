@@ -2,17 +2,19 @@
   background-image: url(../img/background.jpg);
   background-size: cover;
   box-shadow: 0 0 12px 2px var(--verde);
-  height: 82vh;
+  height: calc(100vh - 4rem);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0 0 0;
+  padding: 20px 0 0 0;
+  margin-bottom: 25px;
+  width: 100vw;
 }
 
 .cabecalho__perfil{
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 33.33%;
   justify-content: center;
   align-items: center;
 }
@@ -22,7 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 33.33%;
   width: 100%;
 }
 
@@ -41,56 +43,55 @@
   font-weight: 300;
   font-style: normal;
   font-size: 2.3rem;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
   color: var(--branco);
 }
 
 .cabecalho__perfil-img{
-  height: 200px;
-  border-radius: 60%;
+  height: 160px;
+  border-radius: 100%;
   border: 2px outset var(--verde);
-  padding: 20px;
-}
-
-.cabecalho__img{
-  width: 100vw;
-  height: 70vh;
+  padding: 10px;
 }
 
 .navegacao{
-  display:
-  flex;
   align-items: center;
-  justify-content: space-evenly;
-  height: 100%;
+  display:  flex;
+  height: 33.33%;
+  justify-content: space-around;
+  /* padding: 0 10px 10px 10px; */
   width: 100%;
-  padding-bottom: 1.6rem;
 }
 
 .navegacao__lista{
-  display: flex;
-  width: 40vw;
-  height: 80%;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .navegacao__lista__link{
-  width: 100%;
-  text-align: center;
-  border: 2px solid var(--cinza);
-  border-radius: 14px;
-  padding: 4px;
   background-color: var(--cinza-escuro);
+  border: 2px solid var(--cinza);
+  border-radius: 10px;
   box-shadow: 0 1px 2px 0 var(--verde);
+  margin-bottom: 20px;  
+  padding: 1px;
+  text-align: center;
+  width: 150px;
+}
+
+.navegacao__lista__link:last-child{
+  margin-bottom: 0;  
 }
 
 .navegacao__lista__link a{
   font-family: 'Merriweather', sans-serif;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   text-decoration: none;
   color: var(--verde);
-  line-height: 2rem;
+  line-height: 1.8rem;
 }

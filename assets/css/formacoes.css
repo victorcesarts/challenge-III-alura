@@ -1,6 +1,7 @@
 .formacoes{
-  padding: 1rem 1rem 2rem 1rem;
-  height: 94vh;
+  padding: 0 16px 0 16px;
+  height: calc(100vh - 25px);
+  margin-bottom: 25px;
 }
 
 .formacoes__container{
@@ -10,10 +11,10 @@
     "card-ifmg"
     "card-alura";
   grid-template-columns: 100%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
   gap: .2rem;
   align-items: center;
-  height: calc(94vh - 2rem);
+  height: calc(100vh - 5rem);
 }
 
 .formacoes__card{
@@ -21,7 +22,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 100%;
 }
 
@@ -71,7 +72,6 @@
   line-height: 3rem;
   color: var(--verde);
   text-align: left;
-  padding: .2rem;
 }
 
 .formacoes__card__titulo{
