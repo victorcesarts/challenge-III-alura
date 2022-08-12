@@ -1,6 +1,6 @@
 .projetos{
   padding: 0 16px 0 16px;
-  height: calc(150vh + 3rem);
+  height: calc(150vh + 4rem);
   margin-bottom: 25px;
 }
 
@@ -22,7 +22,7 @@
     "MIPS";
   grid-template-columns: 100%;
   grid-template-rows: 33.33% 33.33% 33.33%;
-  height: calc(150vh - 0px);
+  height: 150vh;
 }
 
 .projetos__card{
@@ -32,7 +32,7 @@
     "card-texto"
     "card-botao";
   grid-template-columns: 100%;
-  grid-template-rows: 60% 25% 15%;
+  grid-template-rows: 55% 30% 15%;
 }
 
 .projetos__card__imagem{
@@ -46,7 +46,7 @@
   background-color: var(--cinza-escuro);
   grid-area: card-texto;
   grid-row: 2 / 2;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .projetos__card__botao{
@@ -85,7 +85,7 @@
 .projetos__card__descritivo{
   color: var(--branco-suave);
   font-family: 'Merriweather', sans-serif;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 300;
   line-height: 1.5rem;
   text-align: justify;
