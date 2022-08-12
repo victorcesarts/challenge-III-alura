@@ -52,7 +52,7 @@
   margin-bottom: 20px;
 }
 
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
@@ -61,7 +61,7 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: var(--branco-suave) !important;
   background-clip: content-box !important;
 }
-
+ */
 .contato__form__input__enviar{
   background-color: var(--cinza-escuro);
   border: 2px solid var(--verde);
