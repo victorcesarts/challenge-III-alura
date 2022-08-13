@@ -118,6 +118,7 @@
   border: 2px solid var(--verde);
   border-radius: 8px;
   color: var(--verde);
+  cursor: pointer;
   font-family: 'Merriweather', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
@@ -135,6 +136,7 @@
   border: 2px solid var(--preto);
   border-radius: 8px;
   color: var(--preto);
+  cursor: pointer;
   font-family: 'Merriweather', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
@@ -152,6 +154,7 @@
   border: 2px solid var(--verde);
   border-radius: 8px;
   color: var(--verde);
+  cursor: pointer;
   font-family: 'Merriweather', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
