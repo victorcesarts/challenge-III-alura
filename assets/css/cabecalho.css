@@ -72,16 +72,6 @@
   width: 100%;
 }
 
-.navegacao__lista__link--li{
-  padding: 1px;
-  text-align: center;
-  width: 100%;
-}
-
-.navegacao__lista__link:last-child{
-  margin-bottom: 0;
-}
-
 .navegacao__lista__link{
   color: var(--verde);
   background-color: var(--cinza-escuro);
@@ -94,7 +84,23 @@
   line-height: 1.8rem;
   margin-bottom: 15px;
   text-decoration: none;
+  transition: .4s background-color ease-in-out .1s, .5s color ease-in-out .1s;
   width: 80%;
+}
+
+.navegacao__lista__link:hover{
+  background-color:var(--verde);
+  color: var(--preto);
+}
+
+.navegacao__lista__link--li{
+  padding: 1px;
+  text-align: center;
+  width: 100%;
+}
+
+.navegacao__lista__link:last-child{
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1024px) {

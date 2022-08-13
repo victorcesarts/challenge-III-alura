@@ -128,7 +128,14 @@
   height: 35px;
   line-height: 1.8rem;
   text-align: center;
+  transition: .4s width ease-in-out .1s, .4s height ease-in-out .1s;
   width: 85%;
+}
+
+.projetos__card__botao--pages:hover{
+  width: 90%;
+  height: 40px
+
 }
 
 .projetos__card__botao--repositorio{
@@ -146,7 +153,13 @@
   height: 35px;
   line-height: 1.8rem;
   text-align: center;
+  transition: .4s width ease-in-out .1s, .4s height ease-in-out .1s;
   width: 80%;
+}
+
+.projetos__card__botao--repositorio:hover{
+  width: 90%;
+  height: 40px
 }
 
 .projetos__card__botao--repositorio--mips{
@@ -161,10 +174,15 @@
   grid-area: botao-pages;
   grid-column: 1 / 3;
   grid-row: 1 / 1;
-  /* height: 20%; */
   line-height: 1.8rem;
   text-align: center;
+  transition: .4s width ease-in-out .1s, .4s height ease-in-out .1s;
   width: 75%;
+}
+
+.projetos__card__botao--repositorio--mips:hover{
+  width: 90%;
+  height: 40px
 }
 
 .projetos__card__imagem--forca{
