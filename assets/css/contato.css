@@ -1,6 +1,6 @@
 .contato{
   padding: 0 16px 0 16px;
-  height: 80vh;
+  height: 100%;
 }
 
 .contato__titulo{
@@ -10,6 +10,12 @@
   font-weight: 400;
   line-height: 3rem;
   text-align: left;
+}
+
+.contato__container{
+  display: flex;
+  flex-direction: column;
+  /* height: calc(20vh - 4rem); */
 }
 
 .contato__redes{
@@ -88,7 +94,7 @@
   }
 
   .contato__container{
-    display: flex;
+    flex-direction: row;
     width: 100%;
     height: calc(80vh - 4rem);
   }
