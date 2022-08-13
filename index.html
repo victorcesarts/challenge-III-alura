@@ -39,14 +39,14 @@
     </div>
     <nav class = "navegacao">
       <ul class = "navegacao__lista">
-        <li class="navegacao__lista__link"><a href="#sobre">Sobre mim</a></li>
-        <li class="navegacao__lista__link"><a href="#skills">Skills</a></li>
-        <li class="navegacao__lista__link"><a href="#formacoes">Formações</a></li>
+        <a class="navegacao__lista__link" href="#sobre"><li class="navegacao__lista__link--li">Sobre mim</li></a>
+        <a class="navegacao__lista__link" href="#skills"><li class="navegacao__lista__link--li">Skills</li></a>
+        <a class="navegacao__lista__link" href="#formacoes"><li class="navegacao__lista__link--li">Formações</li></a>
       </ul>
       <ul class = "navegacao__lista">
-        <li class="navegacao__lista__link"><a href="#projetos">Projetos</a></li>
-        <li class="navegacao__lista__link"><a href = "https://github.com/victorcesarts">Github</a></li>
-        <li class="navegacao__lista__link"><a href="#contato">Contato</a></li>
+        <a class="navegacao__lista__link" href="#projetos"><li class="navegacao__lista__link--li">Projetos</li></a>
+        <a class="navegacao__lista__link" href = "https://github.com/victorcesarts"><li class="navegacao__lista__link--li">Github</li></a>
+        <a class="navegacao__lista__link" href="#contato"><li class="navegacao__lista__link--li">Contato</li></a>
       </ul>
     </nav>
 </header>
@@ -130,14 +130,13 @@
     <section class="projetos">
       <a name = "projetos"></a>
       <h1 class = "projetos__titulo">Projetos</h1>
-      <div class="projetos__container">
-        <div class="projetos__card">
+      <div class="projetos__cards">
+        
+        <div class="projetos__card projetos__card--forca">
           <div class = "projetos__card__imagem projetos__card__imagem--forca"></div>
           <div class="projetos__card__corpo">
-            <div class="projetos__card__cabecalho">
-              <h2 class="projetos__card__titulo">Jogo da forca</h2>
-              <div class="projetos__card__descritivo">Jogo feito utilizando HTML5, CSS3 e Javascript</div>
-            </div>
+            <h2 class="projetos__card__titulo">Jogo da forca</h2>
+            <p class="projetos__card__descritivo">Jogo feito utilizando HTML5, CSS3 e Javascript</p>
           </div>
           <div class = "projetos__card__botao">
             <button onclick = "location.href = 'https://victorcesarts.github.io/challenge-II-alura/'" class = "projetos__card__botao--pages">Pages</button>
@@ -145,13 +144,11 @@
           </div>
         </div>
 
-        <div class="projetos__card">
+        <div class="projetos__card projetos__card--decodificador">
           <div class = "projetos__card__imagem projetos__card__imagem--decodificador"></div>
           <div class="projetos__card__corpo">
-            <div class="projetos__card__cabecalho">
               <h2 class="projetos__card__titulo">Decodificador</h2>
-              <div class="projetos__card__descritivo">Decodificador de texto feito utilizando HTML5, CSS3 e Javascript</div>
-            </div>
+              <p class="projetos__card__descritivo">Decodificador de texto feito utilizando HTML5, CSS3 e Javascript</p>
           </div>
           <div class = "projetos__card__botao">
             <button onclick = "location.href = 'https://victorcesarts.github.io/challenge-I-alura/'" class = "projetos__card__botao--pages">Pages</button>
@@ -159,13 +156,11 @@
           </div>
         </div>
   
-        <div class="projetos__card">
+        <div class="projetos__card projetos__card--MIPS">
           <div class = "projetos__card__imagem projetos__card__imagem--MIPS"></div>
           <div class="projetos__card__corpo">
-            <div class="projetos__card__cabecalho">
-              <h2 class="projetos__card__titulo">Procesador MIPS</h2>
-              <div class="projetos__card__descritivo">Processador MIPS feito utilizando linguagem VHDL de descrição de hardware</div>
-            </div>
+            <h2 class="projetos__card__titulo">Procesador MIPS</h2>
+            <p class="projetos__card__descritivo">Processador MIPS feito utilizando linguagem VHDL de descrição de hardware</p>
           </div>
           <div class = "projetos__card__botao">
             <button onclick = "location.href = 'https://github.com/victorcesarts/Final_Project_MIPS_Architecture'" type="button" class = "projetos__card__botao--repositorio--mips">Repositório</button>
@@ -177,28 +172,30 @@
     <section class="contato">
       <a name = "contato"></a>
       <h1 class = "contato__titulo">Entre em contato</h1>
-      <form action="#" class="contato__formulario">
-        <label class = "contato__form__label" for = "nome">Nome</label>
-        <input class="contato__form__input contato__form__input--nome" id="nome" required>
-
-        <label class = "contato__form__label" for = "email">E-mail</label>
-        <input class="contato__form__input contato__form__input--email" id="email" required>
-
-        <label class = "contato__form__label" for = "assunto">Assunto</label>
-        <input class="contato__form__input contato__form__input--assunto" id="assunto">
-
-        <label class = "contato__form__label" for = "mensagem">Mensagem</label>
-        <textarea class="contato__form__input contato__form__input--mensagem" cols="70" rows="10" id="mensagem" required></textarea>
-
-        <input class="contato__form__input__enviar" type="submit" value="Enviar mensagem">
-      </form>
-      <div class = "contato__redes">
-        <a href = "https://github.com/victorcesarts">
-          <img src = "assets/img/github.svg" class = "contato__github">
-        </a>
-        <a href = "https://linkedin.com/in/victor-cesar-engineering">
-          <img src = "assets/img/linkedin.svg" class = "contato__linkedin">
-        </a>
+      <div class="contato__container">
+        <form action="#" class="contato__formulario">
+          <label class = "contato__form__label" for = "nome">Nome</label>
+          <input class="contato__form__input contato__form__input--nome" id="nome" required>
+  
+          <label class = "contato__form__label" for = "email">E-mail</label>
+          <input class="contato__form__input contato__form__input--email" id="email" required>
+  
+          <label class = "contato__form__label" for = "assunto">Assunto</label>
+          <input class="contato__form__input contato__form__input--assunto" id="assunto">
+  
+          <label class = "contato__form__label" for = "mensagem">Mensagem</label>
+          <textarea class="contato__form__input contato__form__input--mensagem" cols="70" rows="10" id="mensagem" required></textarea>
+  
+          <input class="contato__form__input__enviar" type="submit" value="Enviar mensagem">
+        </form>
+        <div class = "contato__redes">
+          <a href = "https://github.com/victorcesarts">
+            <img src = "assets/img/github.svg" class = "contato__github">
+          </a>
+          <a href = "https://linkedin.com/in/victor-cesar-engineering">
+            <img src = "assets/img/linkedin.svg" class = "contato__linkedin">
+          </a>
+        </div>
       </div>
     </section>
   </main>

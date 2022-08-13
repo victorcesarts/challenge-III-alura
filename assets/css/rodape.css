@@ -1,8 +1,10 @@
 .rodape{
   align-items: center;
   background-color: var(--cinza-escuro);
-  display:flex;
-  flex-direction:column;
+  display:
+  flex;
+  flex-direction:
+  column;
   height: 10vh;
   justify-content: center;
 }

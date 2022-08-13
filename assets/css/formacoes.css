@@ -12,7 +12,7 @@
     "card-alura";
   grid-template-columns: 100%;
   grid-template-rows: 33.33% 33.33% 33.33%;
-  gap: .2rem;
+  gap: 6px;
   align-items: center;
   height: calc(100vh - 5rem);
 }
@@ -84,4 +84,46 @@
   text-align: center;
   width: 75%;
   padding: .2rem;
+}
+
+@media screen and (min-width: 658px) {
+  .formacoes{
+    height: 80vh;
+    padding: 0 25px 0 25px;
+  }
+  
+  .formacoes__container{
+    gap: 0px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 100%;
+    height: calc(80vh - 25px - 2rem);
+  }
+
+  .formacoes__card{
+    width: 99%;
+    height: 100%;
+  }
+
+  .formacoes__card__border{
+    height: 30%;
+  }
+
+  .formacoes__card__titulo{
+    width: 85%;
+  }
+
+  .card__ufmg{
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+  
+  .card__ifmg{
+    grid-column: 2 / 2;
+    grid-row: 1 / 1
+  }
+  
+  .card__alura{
+    grid-column: 3 / 3;
+    grid-row: 1 / 1
+  }
 }
